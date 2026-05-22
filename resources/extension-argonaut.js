@@ -313,7 +313,7 @@
       const dest = appName ? `/chat?app=${encodeURIComponent(appName)}` : "/chat";
       window.location.assign(dest);
     };
-    return React.createElement("div", { onClick: goToChat }, "Chat Assistant");
+    return React.createElement("span", { onClick: goToChat }, "Chat Assistant");
   };
 
   window.extensionsAPI.registerTopBarActionMenuExt(
@@ -322,7 +322,7 @@
     "chat_assistant",
     null,
     () => true,
-    "fa-comments",
+    "fa fa-comments",
     true
   );
 })();
