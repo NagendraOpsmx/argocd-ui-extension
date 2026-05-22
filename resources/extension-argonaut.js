@@ -302,7 +302,7 @@
     );
   };
 
-  window.extensionsAPI.registerSystemLevelExtension(ChatExtension, "Chat", "/chat", "fa-comments");
+  window.extensionsAPI.registerSystemLevelExtension(ChatExtension, "Chat", "/chat", "comments");
 
   const TopBarChatShortcut = (props) => {
     const appName =
@@ -322,7 +322,7 @@
     "chat_assistant",
     null,
     () => true,
-    "fa fa-comments",
+    "comments",
     true
   );
 })();
